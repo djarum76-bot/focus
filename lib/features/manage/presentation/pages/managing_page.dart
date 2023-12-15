@@ -36,7 +36,10 @@ class _ManagingPageState extends State<ManagingPage> {
           titleText: "Manage Project & Tags",
           titleStyle: AppTypography.heading4.copyWith(color: Colors.white),
           bgColor: colors.background,
-          icon: LineIcons.arrowLeft,
+          lead: GestureDetector(
+            onTap: () => Navigator.pop(context),
+            child: const Icon(LineIcons.arrowLeft, color: Colors.white,),
+          ),
           tabBar: TabBar(
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(8), // Creates border

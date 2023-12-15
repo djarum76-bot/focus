@@ -175,8 +175,8 @@ class CustomAppBar extends AppBar {
     TextStyle? titleStyle,
     Color? bgColor,
     List<Widget>? widgets,
-    required IconData icon,
-    required TabBar tabBar
+    required TabBar tabBar,
+    required Widget lead
   }) {
     return CustomAppBar._tabBar(
         titleText: titleText,
@@ -184,8 +184,8 @@ class CustomAppBar extends AppBar {
         bgColor: bgColor,
         key: key,
         widgets: widgets,
-        icon: icon,
         tabBar: tabBar,
+        lead: lead,
     );
   }
 
@@ -195,8 +195,8 @@ class CustomAppBar extends AppBar {
     required this.titleStyle,
     this.bgColor,
     this.widgets,
-    required this.icon,
     required this.tabBar,
+    required this.lead
   }) : super(
       centerTitle: true,
       elevation: 0,
@@ -206,10 +206,7 @@ class CustomAppBar extends AppBar {
         style: titleStyle,
       ),
       actions: widgets ?? <Widget>[],
-      leading: GestureDetector(
-        onTap: () => Navigator.pop(navigatorKey.currentContext!),
-        child: Icon(icon, color: Colors.white,),
-      ),
+      leading: lead,
       bottom: tabBar
   );
 }

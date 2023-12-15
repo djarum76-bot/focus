@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:focus/shared/extensions/styles_extension.dart';
 import 'package:focus/themes/app_text_style.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -30,6 +31,8 @@ class ManageItem extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
+
     return Container(
       margin: EdgeInsets.only(left: 4.w, bottom: 2.h),
       child: InkWell(
@@ -39,6 +42,7 @@ class ManageItem extends StatelessWidget{
           width: 44.w,
           decoration: BoxDecoration(
               border: Border.all(color: color),
+              color: colors.surfaceVariant.withOpacity(0.25),
               borderRadius: BorderRadius.circular(12)
           ),
           padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 2.h),

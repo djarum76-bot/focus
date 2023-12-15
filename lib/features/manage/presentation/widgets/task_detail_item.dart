@@ -16,7 +16,7 @@ class TaskDetailItem extends StatelessWidget{
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Radio<bool>.adaptive(
+            Radio<bool>(
               value: isCompleted,
               groupValue: true,
               onChanged: (_){},

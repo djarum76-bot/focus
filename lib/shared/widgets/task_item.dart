@@ -55,7 +55,7 @@ class TaskItem extends StatelessWidget{
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Radio.adaptive(
+              Radio(
                 value: 1,
                 groupValue: 1,
                 onChanged: (_){},

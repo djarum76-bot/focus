@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:focus/features/dashboard/data/models/dashboard_model.dart';
 import 'package:focus/features/dashboard/presentation/cubits/dashboard_cubit.dart';
-import 'package:focus/features/dashboard/presentation/pages/calendar_page.dart';
+import 'package:focus/features/calendar/presentation/pages/calendar_page.dart';
 import 'package:focus/features/focus/presentation/blocs/focus/focus_bloc.dart';
 import 'package:focus/features/focus/presentation/pages/focus_page.dart';
 import 'package:focus/features/manage/presentation/pages/manage_page.dart';
